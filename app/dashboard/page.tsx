@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import JournalCard from '@/components/JournalCard';
-import Alert from '@/components/Alert';
 
 interface Paper {
   id: string;

@@ -100,7 +100,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-3xl font-bold mb-4">Ready to Revolutionize Your Research?</h3>
           <p className="text-lg mb-8 opacity-90">
-            Start analyzing your journals with AI today. It's free, it's fast, and it's designed for researchers like you.
+            Start analyzing your journals with AI today. It&apos;s free, it&apos;s fast, and it&apos;s designed for researchers like you.
           </p>
           <a
             href="/upload"

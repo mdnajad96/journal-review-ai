@@ -88,7 +88,8 @@ export function parseEndnoteXML(xmlContent: string): BibtexEntry[] {
     const parser = new DOMParser();
     const xmlDoc = parser.parseFromString(xmlContent, 'text/xml');
 
-    if (xmlDoc.parseError && xmlDoc.parseError.errorCode !== 0) {
+    const parserError = xmlDoc.getElementsByTagName('parsererror');
+    if (parserError.length > 0) {
       throw new Error('Invalid XML format');
     }
 
