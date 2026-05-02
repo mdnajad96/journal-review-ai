@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 interface FooterProps {
   compact?: boolean;
@@ -38,10 +39,10 @@ export default function Footer({ compact = false }: FooterProps) {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm text-slate-400">
-              <li><a href="/" className="hover:text-white transition">Home</a></li>
-              <li><a href="/upload" className="hover:text-white transition">Upload</a></li>
-              <li><a href="/search" className="hover:text-white transition">Search</a></li>
-              <li><a href="/dashboard" className="hover:text-white transition">Dashboard</a></li>
+              <li><Link href="/" className="hover:text-white transition">Home</Link></li>
+              <li><Link href="/upload" className="hover:text-white transition">Upload</Link></li>
+              <li><Link href="/search" className="hover:text-white transition">Search</Link></li>
+              <li><Link href="/dashboard" className="hover:text-white transition">Dashboard</Link></li>
             </ul>
           </div>
 
