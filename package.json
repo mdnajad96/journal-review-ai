@@ -16,7 +16,6 @@
     "openai": "^4.24.0",
     "axios": "^1.6.0",
     "pdf-parse": "^1.1.1",
-    "bibtex-parser": "^0.1.24",
     "@supabase/supabase-js": "^2.38.0",
     "dotenv": "^16.3.1"
   },
