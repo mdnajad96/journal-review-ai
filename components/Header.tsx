@@ -8,6 +8,8 @@ interface HeaderProps {
 }
 
 export default function Header({ title, subtitle }: HeaderProps) {
+  void title;
+  void subtitle;
   return (
     <header className="bg-white shadow-sm border-b border-slate-200 sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">

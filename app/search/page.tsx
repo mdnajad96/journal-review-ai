@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Alert from '@/components/Alert';
 import JournalCard from '@/components/JournalCard';
 import LoadingSpinner from '@/components/LoadingSpinner';
@@ -84,14 +84,14 @@ export default function SearchImproved() {
     const paper = papers.find((p) => p.id === paperId);
     if (paper) {
       // Implement analysis later
-      alert(`Analyzing: ${paper.title}`);
+      window.alert(`Analyzing: ${paper.title}`);
     }
   };
 
   const handleSave = (paperId: string) => {
     const paper = papers.find((p) => p.id === paperId);
     if (paper) {
-      alert(`Saved: ${paper.title}`);
+      window.alert(`Saved: ${paper.title}`);
     }
   };
 

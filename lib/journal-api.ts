@@ -3,7 +3,7 @@
  * Integrations with arXiv, CrossRef, and other journal databases
  */
 
-interface PaperMetadata {
+export interface PaperMetadata {
   title: string;
   authors: string[];
   publishedDate: string;
@@ -12,7 +12,7 @@ interface PaperMetadata {
   source: string;
 }
 
-interface SearchResponse {
+export interface SearchResponse {
   success: boolean;
   data?: PaperMetadata[];
   error?: string;
